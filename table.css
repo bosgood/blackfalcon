@@ -1,0 +1,80 @@
+.google-visualization-table-table {
+    background: none repeat scroll 0 0 white;
+    border-spacing: 0;
+    cursor: default;
+    font-family: arial,helvetica;
+    font-size: 10pt;
+    margin: 0;
+}
+.google-visualization-table-table tbody {
+    background: none repeat scroll 0 0 transparent;
+}
+.google-visualization-table-table * {
+    margin: 0;
+    padding: 2px;
+    vertical-align: middle;
+}
+.google-visualization-table-tr-head, .google-visualization-table-tr-head td, .google-visualization-table-tr-head-nonstrict {
+    background: none !important;
+    font-weight: bold;
+    text-align: center;
+}
+.google-visualization-table-tr-even, .google-visualization-table-tr-even td, .google-visualization-table-tr-even-nonstrict {
+    background-color: #FFFFFF;
+}
+.google-visualization-table-tr-odd, .google-visualization-table-tr-odd td, .google-visualization-table-tr-odd-nonstrict {
+    background-color: #FFFFFF !important;
+}
+.google-visualization-table-tr-sel, .google-visualization-table-tr-sel td, .google-visualization-table-tr-sel-nonstrict {
+    background-color: #FFFFFF !important;
+}
+.google-visualization-table-tr-over, .google-visualization-table-tr-over td, .google-visualization-table-tr-over-nonstrict {
+    background-color: #FFFFFF !important;
+}
+.google-visualization-table-sorthdr {
+    cursor: pointer;
+}
+.google-visualization-table-sortind {
+    color: #CCCCCC;
+    font-size: 9px;
+    padding-left: 6px;
+}
+.google-visualization-table-th {
+    border: 1px solid #EEEEEE;
+    padding: 6px;
+}
+.google-visualization-table-th-webkit td, .google-visualization-table-th-webkit-nonstrict {
+    background-color: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    padding: 6px;
+}
+.google-visualization-table-td-freeze-rightmost {
+    border-right-width: 4px;
+}
+.google-visualization-table-td {
+    border: 1px solid #EEEEEE;
+    padding: 2px 3px;
+}
+.google-visualization-table-td-bool {
+    font-family: Arial Unicode MS,Arial,Helvetica;
+    text-align: center;
+}
+.google-visualization-table-td-center {
+    text-align: center;
+}
+.google-visualization-table-td-number {
+    text-align: right;
+    white-space: nowrap;
+}
+.google-visualization-table-seq {
+    color: #666666;
+    text-align: right;
+}
+.google-visualization-table-div-page {
+    margin: 2px 0 0;
+    padding: 0;
+}
+
+.data-table {
+    width: 600px;
+}
