@@ -5,12 +5,10 @@
   });
 
   google.setOnLoadCallback(function() {
-    var query, sql, sqlE, url, urlPlusParams;
-    sql = 'SELECT Name FROM 3368684';
-    sqlE = encodeURIComponent(sql);
-    url = 'http://www.google.com/fusiontables/gvizdata?tq=';
-    urlPlusParams = url + sqlE;
-    query = new google.visualization.Query(urlPlusParams);
+    var query, sql, url;
+    sql = encodeURIComponent("SELECT Name, Value FROM 3433619 WHERE Event = 'race' ORDER BY Value ASC");
+    url = "http://www.google.com/fusiontables/gvizdata?tq=" + sql;
+    query = new google.visualization.Query(url);
     return query.send(function(response) {
       var data, table;
       if (response.isError()) return;
