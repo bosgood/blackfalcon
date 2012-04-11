@@ -3,7 +3,7 @@ google.setOnLoadCallback () ->
     tableDiv = document.getElementById 'racers_table'
     if (tableDiv == null)
         return
-    sql = encodeURIComponent "SELECT Name, Value FROM 3433619 WHERE Event = 'race' ORDER BY Value ASC"
+    sql = encodeURIComponent "SELECT Value as Place, Name FROM 3433619 WHERE Event = 'race' ORDER BY Value ASC"
     url = "http://www.google.com/fusiontables/gvizdata?tq=#{sql}"
     query = new google.visualization.Query(url)
     query.send (response) ->
