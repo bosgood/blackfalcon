@@ -79,12 +79,12 @@
 
 /* Begin custom CSS */
 .data-table {
-    border: 4px solid #000000;
-    width: 300px;
+    border: 4px solid #000000 !important;
+    width: 300px !important;
 }
 .data-table .google-visualization-table-th {
-    border-bottom: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC !important;
 }
 .data-table td {
-    border: 0px;
+    border: 0px !important;
 }
