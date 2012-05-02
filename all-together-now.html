@@ -91,9 +91,9 @@
 }
 </style>
 <script type='text/javascript' src='https://www.google.com/jsapi'></script>
-<script type="text/javascript">
-((function(){google.load("visualization","1",{packages:["table"]});google.setOnLoadCallback(function(){var a,b,c,d;c=document.getElementById("racers_table");if(c===null)return;b=encodeURIComponent("SELECT Value as Place, Name FROM 3433619 WHERE Event = 'race' ORDER BY Value ASC");d="http://www.google.com/fusiontables/gvizdata?tq="+b;a=new google.visualization.Query(d);return a.send(function(a){var b,d;if(a.isError())return;b=a.getDataTable();d=new google.visualization.Table(c);return d.draw(b,{showRowNumber:!1,alternatingRowStyle:!1})})})})).call(this);
+<script type='text/javascript'>
+(function(){var a;google.load("visualization","1",{packages:["table"]});google.load("jquery","1.7.1");a=function(a,b){var c,d,e;console.log(b);d="SELECT Value as Place, Name FROM 3433619 WHERE Event = '"+b.eventType+"' AND RaceNum = "+b.race+" ORDER BY Value ASC";console.log(d);d=encodeURIComponent(d);e="http://www.google.com/fusiontables/gvizdata?tq="+d;c=new google.visualization.Query(e);return c.send(function(b){var c,d;if(b.isError())return;c=b.getDataTable();d=new google.visualization.Table(a);return d.draw(c,{showRowNumber:!1,alternatingRowStyle:!1})})};google.setOnLoadCallback(function(){var b,c,d,e,f;d=document.getElementsByClassName("blackfalcon-top10");for(e=0,f=d.length;e<f;e++){c=d[e];b=$(c).data("blackfalcon");if(!b)return;switch(b.type){case"top10":a(c,b)}}})}).call(this);
 </script>
 
 <!-- and then place this later on page... -->
-<center><div id="racers_table" class="data-table blackfalcon-top10" data='{race:1, type="top10"}'></div></center>
+<center><div id="racers_table1" class="data-table blackfalcon-top10" data-blackfalcon='{"race":1, "type":"top10", "eventType":"race"}'></div></center>
